@@ -1,0 +1,9 @@
+/* src/MapPage.css */
+.map-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.map-page svg {
+  background-color: #f9f9f9;
+}
