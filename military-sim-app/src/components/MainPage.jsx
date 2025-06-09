@@ -3,22 +3,7 @@ import { Link } from 'react-router-dom';
 import { BookOpenCheck, Info } from 'lucide-react';
 import HeroSection from './HeroSection';
 import PreparationCards from './PreparationCards';
-import ArmorInfo from './ArmorInfo';
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Map } from 'lucide-react';
-
-const MainPage = ({ setIsModalOpen }) => {
-  return (
-    <div>
-      <h1>Симулятор военных операций</h1>
-
-      {/* Здесь могут быть другие секции */}
-    </div>
-  );
-};
-
+import InteractiveMap from './InteractiveMap'; // добавили карту
 
 function MainPage({ setIsModalOpen }) {
   return (
@@ -29,7 +14,7 @@ function MainPage({ setIsModalOpen }) {
 
       <HeroSection />
       <PreparationCards />
-      <ArmorInfo />
+      <InteractiveMap /> {/* Вставили карту сюда */}
 
       <div className="button-section" style={{ textAlign: 'center', margin: '20px 0' }}>
         <Link to="/topics">
